@@ -93,3 +93,37 @@ func swap(x, y string) (string, string) {
 	return y, x
 }
 ```
+
+## If-Else
+```go
+a, b := 20, 40
+
+if a < b {
+  fmt.Println("a is smaller than b")
+} else {
+  fmt.Println("a is greater than b")
+}
+```
+
+### Switch case
+```go
+switch age := 16; {
+case age == 0:
+  fmt.Println("newborn")
+
+case age > 0 && age <= 3:
+  fmt.Println("toddler")
+
+case age > 3 && age <= 12:
+  fmt.Println("toddler")
+
+case age > 3 && age <= 12:
+  fmt.Println("child")
+
+case age > 12 && age <= 17:
+  fmt.Println("teenager")
+
+case age > 18:
+  fmt.Println("adult")
+}
+```
