@@ -182,3 +182,32 @@ func main() {
 	fmt.Println(user.skills)
 }
 ```
+
+### Function to the Structure
+we can extend the structure using function by defining a function over it
+```go
+type User struct {
+	name     string
+	age      int
+	role     string
+	isActive bool
+	skills   []string
+}
+
+func (user User) showInfo() string {
+	return fmt.Sprintf("%s is %s aged %d\n", user.name, user.role, user.age)
+}
+
+//after that we can use showInfo function as the member of User structure
+user := User{
+  name:     "Khadga Bahadur Shrestha",
+  age:      25,
+  role:     "Mobile Application Developer",
+  isActive: true,
+  skills: []string{
+    "Flutter", "Node Js", "Docker", "MySQL",
+  },
+}
+
+fmt.Println(user.showInfo())
+```
