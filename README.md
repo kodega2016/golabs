@@ -144,3 +144,15 @@ for i := 0; i < len(users); i++ {
   fmt.Println(i, users[i])
 }
 ```
+
+### Range in Go
+we can iterate over an array using range also
+```go
+users := []string{
+  "Khadga Shrestha", "Nishuka Shrestha", "Menuka Shrestha",
+}
+
+for i, name := range users {
+  fmt.Println(i, name)
+}
+```
