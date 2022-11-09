@@ -247,3 +247,26 @@ func main() {
 	fmt.Printf("Value with %d address is %d", p, *p)
 }
 ```
+
+### Receiver Function
+we can use pointer to update the struct
+```go
+func main() {
+	counter := Counter{
+		count: 1,
+	}
+
+	fmt.Println("count:", counter.count)
+	increment(&counter)
+	fmt.Println("count:", counter.count)
+
+}
+
+type Counter struct {
+	count int
+}
+
+func increment(counter *Counter) {
+	counter.count++
+}
+```
