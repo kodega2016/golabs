@@ -67,3 +67,29 @@ fmt.Println(a > 20 && b < 50)
 fmt.Println(a == b)
 fmt.Println(a != b)
 ```
+
+## Functions in Go
+in go,we can define function using `func` keyword
+
+
+#### Basic function
+
+```go
+func greet() {
+	fmt.Println("greeting...")
+}
+```
+
+#### Function with arguments and return type
+```go
+func greetWithName(name string) string {
+	return fmt.Sprintf("greeting...%s\n", name)
+}
+```
+
+#### Function with multiple return
+```go
+func swap(x, y string) (string, string) {
+	return y, x
+}
+```
