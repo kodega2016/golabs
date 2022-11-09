@@ -37,3 +37,33 @@ var (
 fmt.Println(companyName, address)
 ```
 
+## Operators in Go
+like other languages, go has
+- arithmetic operators
+- assigmnet operators
+- logical operators
+- comparision operators
+- bitwise operators
+
+```go
+a, b := 10, 20
+
+//arithmetic operator
+fmt.Println(a + b)
+fmt.Println(a - b)
+
+// increment / decrement operator
+a++
+fmt.Println(a)
+b--
+fmt.Println(b)
+
+// comparision operator
+fmt.Println(a > b)
+fmt.Println(a < b)
+
+// logical operator
+fmt.Println(a > 20 && b < 50)
+fmt.Println(a == b)
+fmt.Println(a != b)
+```
