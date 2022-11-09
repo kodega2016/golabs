@@ -156,3 +156,29 @@ for i, name := range users {
   fmt.Println(i, name)
 }
 ```
+
+### Structure in Go
+in go,we can use structure to define and use multiple data type [similar to class]
+```go
+type User struct {
+	name     string
+	age      int
+	isActive bool
+	skills   []string
+}
+
+func main() {
+	user := User{
+		name:     "Khadga Bahadur Shrestha",
+		age:      25,
+		isActive: true,
+		skills: []string{
+			"Flutter", "Node Js", "Docker", "MySQL",
+		},
+	}
+
+	fmt.Println(user)
+	fmt.Println(user.name)
+	fmt.Println(user.skills)
+}
+```
